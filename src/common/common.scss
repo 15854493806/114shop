@@ -1,0 +1,471 @@
+/**
+ * 此处为自定义css全局变量
+ * 支持sass变量
+ * 可直接在ui上使用
+ */
+
+
+$prefix: sxf;
+
+// 文字相关
+.#{$prefix}-text-center {
+	text-align: center;
+}
+
+// 浮动相关
+.#{$prefix}-fl {
+	float: left;
+}
+
+.#{$prefix}-fr {
+	float: right;
+}
+
+.#{$prefix}-clearfix:before,
+.#{$prefix}-clearfix:after {
+	display: table;
+	content: "";
+}
+
+.#{$prefix}-clearfix:after {
+	clear: both
+}
+
+.center {
+	display: flex;
+	align-self: center;
+	justify-self: center;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.flex {
+	display: flex;
+}
+
+.flex-wr-ap {
+	flex-wrap: wrap;
+}
+
+.flex-inline {
+	display: inline-flex;
+}
+
+.flex-inline-r {
+	display: inline-flex;
+	flex-direction: row-reverse;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-space-around {
+	display: flex;
+	justify-content: space-around;
+}
+
+.flex-row-r {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-column-r {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.row-center {
+	justify-content: center;
+}
+
+.column-center {
+	align-items: center;
+}
+
+
+.row-end {
+	justify-content: flex-end;
+}
+
+.column-end {
+	align-items: flex-end;
+}
+
+.row-start {
+	justify-content: start;
+}
+
+.column-start {
+	align-items: start;
+}
+
+.row-space-between {
+	justify-content: space-between;
+}
+
+.row-space-around {
+	justify-content: space-around;
+}
+
+.self-row-center {
+	justify-self: center;
+}
+
+.self-column-center {
+	align-self: center;
+}
+
+.self-row-start {
+	justify-self: start;
+}
+
+.self-column-start {
+	align-self: start;
+}
+
+.self-row-end {
+	justify-self: end;
+}
+
+.self-column-end {
+	align-self: end;
+}
+
+.margin-au-to {
+	margin: 0 auto;
+}
+
+@for $index from 0 to 1000 {
+	.#{$prefix}-m-#{$index} {
+		margin: #{$index}px !important;
+	}
+
+	.#{$prefix}-mt-#{$index} {
+		margin-top: #{$index}px !important;
+	}
+
+	.#{$prefix}-mr-#{$index} {
+		margin-right: #{$index}px !important;
+	}
+
+	.#{$prefix}-mb-#{$index} {
+		margin-bottom: #{$index}px !important;
+	}
+
+	.#{$prefix}-ml-#{$index} {
+		margin-left: #{$index}px !important;
+	}
+
+	.#{$prefix}-p-#{$index} {
+		padding: #{$index}px !important;
+	}
+
+	.#{$prefix}-pt-#{$index} {
+		padding-top: #{$index}px !important;
+	}
+
+	.#{$prefix}-pr-#{$index} {
+		padding-right: #{$index}px !important;
+	}
+
+	.#{$prefix}-pb-#{$index} {
+		padding-bottom: #{$index}px !important;
+	}
+
+	.#{$prefix}-pl-#{$index} {
+		padding-left: #{$index}px !important;
+	}
+}
+// 行高
+@for $index from 1 to 100 {
+	.lineH-#{$index} {
+		line-height: #{$index}px !important;
+	}
+}
+
+// 圆角
+@for $index from 1 to 100 {
+	.br-#{$index} {
+		border-radius: #{$index}px !important;
+	}
+}
+// 文本过长换行
+.word-br-ea {
+	word-break: break-word;
+}
+
+.box-sz {
+	box-sizing: border-box;
+}
+
+// 字体类
+@for $index from 1 to 100 {
+	.fs-#{$index} {
+		font-size: #{$index}px !important;
+	}
+}
+
+.fw-700 {
+	font-weight: 700;
+}
+
+.fw-500 {
+	font-weight: 500;
+}
+
+.fw-400 {
+	font-weight: 400;
+}
+
+.fw-b {
+	font-weight: bold;
+}
+
+.fc-common {
+	color:#EA212F;
+}
+
+.fc-cccccc {
+	color:#CCCCCC;
+}
+.fc-222222 {
+	color:#222222;
+}
+.bg-common {
+	background:#EA212F;
+}
+
+.bd-common {
+	border: 1px solid #EA212F;
+}
+
+.fc-ffffff {
+	color: #ffffff;
+}
+.fc-f6f6f6 {
+	color: #F6F6F6;
+}
+
+.foot-style-dadada {
+  border-top:1px solid #dadada;border-bottom:1px solid #dadada;
+}
+.bg-c-ffffff {
+	background-color: #ffffff;
+}
+.bg-c-999999 {
+	background-color: #999999;
+}
+.bg-E6E6E6 {
+	 background-color: #E6E6E6;
+ }
+.bg-F6F6F6 {
+	background-color: #F6F6F6;
+}
+.bg-F5F5F5 {
+  background-color: #F5F5F5;
+}
+.bg-B8B8B8 {
+	background: #B8B8B8;
+}
+
+.bg-#FF747E {
+	background: #FF747E;
+
+}
+
+.bg-E9E9E9 {
+	background: #E9E9E9;
+}
+
+.fc-B8B8B8 {
+	color: #B8B8B8;
+}
+
+.fc-888888 {
+	color: #888888;
+}
+
+
+.fc-333333 {
+	color: #333333;
+}
+.fc-848484 {
+  color: #848484;
+}
+.fc-666666 {
+	color: #666666;
+}
+
+.fc-999999 {
+	color: #999999;
+}
+
+
+.min-h-100p {
+	min-height: 100%;
+}
+
+.h-100p {
+	height: 100%;
+}
+
+.w-100p {
+	width: 100%;
+}
+
+.w-95p {
+	width: 95%;
+}
+
+.w-33p {
+	width: 33.33%;
+}
+
+.w-25p {
+	width: 25%;
+}
+
+.w-50p {
+	width: 50%;
+}
+
+.w-66p {
+	width: 66.66%;
+}
+
+.br-bottome5e5e5 {
+  border-bottom: 1px solid #e5e5e5
+}
+.br-tope5e5e5 {
+  border-top: 1px solid #e5e5e5
+}
+.br-50p {
+	border-radius: 50%
+}
+
+.br-bd {
+	border: 2px solid #E6E6E6;
+	border-radius:10px;
+}
+
+.br-bdcommoncolor {
+	border: 2px solid #EA212F;
+	border-radius:20px;
+
+}
+
+.cPointer {
+  cursor: pointer;
+}
+
+.br-bd999color {
+	border: 2px solid #999999;
+	border-radius:20px;
+}
+
+.br-bd999color10 {
+	border: 4px solid rgb(153,153,153);
+	border-radius:10px;
+}
+
+.br-da-shed {
+	border: 2px dashed #E6E6E6;
+	border-radius:10px;
+}
+
+.bd-none {
+	border: none;
+}
+
+
+.br-bt {
+	border-bottom: 1px solid #E6E6E6;
+}
+
+.br-btB8B8B8 {
+	border-bottom: 1px solid #B8B8B8;
+}
+
+.br-bt69A1FF {
+	border-bottom: 1px solid #69A1FF;
+}
+.br-btnone {
+	border-bottom: none;
+}
+
+.br-lr {
+	border-radius: 1000px
+}
+
+.t-a-center {
+	text-align: center;
+}
+
+.t-a-right {
+	text-align: right;
+}
+
+.t-a-left {
+	text-align: left;
+}
+.t-overflow-hidden {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+//定位
+.pr {
+	position: relative;
+}
+
+.pa {
+	position: absolute;
+}
+
+.no-padding {
+	padding: 0 !important;
+}
+// 文本缩进
+.text-ind-ent {
+	text-indent: 40px
+}
+// 宽高类
+@for $index from 1 to 2000 {
+	.w-#{$index} {
+		width: #{$index}px !important;
+	}
+
+	.h-#{$index} {
+		height: #{$index}px !important;
+	}
+}
+.formRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 15px;
+	background: #FFFFFF;
+	padding: 30px;
+	border-radius: 20px;
+	.formLabel {
+		color: #666;
+		font-size: 28px;
+	}
+	.formLabel.required:before {
+		content: '*';
+		color: red;
+	}
+}
+
+.rui-picker{
+	height: auto !important;
+}
